@@ -1,0 +1,76 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "modules": [
+    "title",
+    "separator",
+    {
+        "type": "os",
+        "key": "OS",
+        "keyColor": "blue",
+        "format": "{name} {version}"
+    },
+    {
+        "type": "kernel",
+        "key": "Kernel"
+    },
+    "host",
+    {
+        "type": "display",
+        "key": "Display",
+        "format": "{0}x{2} in {12}\", {3}Hz",
+    },
+    "separator",
+    "uptime",
+    "de",
+    {
+        "type": "font",
+        "key": "Font",
+        "format": "{2}"
+    },
+    "terminal",
+    "separator",
+    {
+        "type": "cpu",
+        "key": "CPU",
+        "format": "{0} @ {7}"
+    },
+    {
+        "type": "gpu",
+        "key": "GPU",
+        "format": "{0} {2} @ {12}"
+    },
+    {
+        "type": "memory",
+        "key": "Memory",
+        "percent": {
+            "type": 3,
+            "green": 30,
+            "yellow": 70
+        }
+    },
+    {
+        "type": "swap",
+        "key": "Swap",
+        "percent": {
+            "type": 3,
+            "green": 30,
+            "yellow": 70
+        }
+    },
+    "disk",
+    {
+        "type": "localip",
+        "key": "Local IP",
+        "format": "{0}"
+    },
+    {
+        "type": "battery",
+        "key": "Battery",
+        "format": "{4} [{5}]",
+        "keyColor": "blue"
+    },
+    "poweradapter",
+    "break",
+    "colors"
+  ]
+}
