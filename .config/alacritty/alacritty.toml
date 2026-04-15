@@ -1,13 +1,13 @@
 [env]
 TERM =  "xterm-256color"
 
-[window]
-padding = {x = 20, y = 20}
+[terminal.shell]
+program = "tmux"
 
-decorations = "Buttonless"
-opacity = 0.92
-blur = true
+[window]
+padding = {x = 10, y = 10}
+opacity = 1.0
 
 [font]
-normal.family = "JetBrainsMono Nerd Font"
-size = 14
+normal.family = "JetBrains Mono"
+size = 13
